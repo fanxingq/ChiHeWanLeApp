@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+     <TextView 
+        android:id="@+id/goods_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/little_sapce"
+        android:text="温馨提示"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_default"
+        android:textStyle="bold"
+        />
+ 	<ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuan_info_line"/>
+    
+    <WebView 
+        android:id="@+id/wv_gn_warm_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuan_info_line"/>
+</LinearLayout>

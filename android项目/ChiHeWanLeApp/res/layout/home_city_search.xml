@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="当前城市"
+    android:textColor="@color/gray"
+    android:padding="@dimen/normal_space"
+    android:textSize="@dimen/text_size_zhuti"/>
+    <TextView 
+        android:id="@+id/home_city_index_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cityname"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_default" 
+        android:padding="@dimen/normal_space"/>
+    
+    
+
+</LinearLayout>

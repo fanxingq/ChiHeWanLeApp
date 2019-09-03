@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/little_sapce"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView 
+            android:layout_width="105dp"
+            android:layout_height="1dp"
+            android:padding="@dimen/little_sapce"
+            android:background="@color/gray"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方账号登录"
+            android:textColor="@color/gray"
+            android:padding="@dimen/little_sapce"
+            android:textSize="@dimen/text_size_zhuti2"/>
+        
+         <TextView 
+            android:layout_width="105dp"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:padding="@dimen/little_sapce"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_space">
+        <TextView 
+            android:id="@+id/login_weixin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:drawableTop="@drawable/weixin_btn"
+            android:text="微信"
+            android:drawablePadding="@dimen/little_sapce"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/text_size_zhuti2"/>
+        <TextView 
+            android:id="@+id/login_weibo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:drawableTop="@drawable/weibo_btn"
+            android:text="微博"
+            android:drawablePadding="@dimen/little_sapce"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/text_size_zhuti2"/>
+        <TextView 
+            android:id="@+id/login_QQ"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:drawableTop="@drawable/qq_btn"
+            android:text="QQ"
+            android:drawablePadding="@dimen/little_sapce"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/text_size_zhuti2"/>
+        <TextView 
+            android:id="@+id/login_zhifu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:drawableTop="@drawable/zhifubao_btn"
+            android:text="支付宝"
+            android:drawablePadding="@dimen/little_sapce"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/text_size_zhuti2"/>
+    </LinearLayout>
+
+</LinearLayout>

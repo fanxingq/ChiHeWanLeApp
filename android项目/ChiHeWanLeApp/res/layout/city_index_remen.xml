@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/little_sapce"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="国内热门城市"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_zhuti"/>
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="ssssss"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_zhuti2"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChiHeWanLeApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+ 	<string name="cityname">正在定位城市</string>
+ 	<string name="home_cityname">城市名称</string>
+ 	<string name="tuan_index_title">主标题</string>
+ 	<string name="tuan_index_title2">副标题</string>
+ 	<string name="tuan_index_price">22</string>
+ 	<string name="tuan_index_value">40</string>
+ 	<string name="tuan_index_look">100次</string>
+ 	<string name="tuan_index_distance">1000米</string>
+ 	
+ 	
+ 	
+</resources>

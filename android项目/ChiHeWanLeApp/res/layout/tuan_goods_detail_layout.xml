@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/normal_space"
+    android:orientation="vertical" >
+  
+    <TextView 
+        android:id="@+id/goods_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本单详情"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_default"
+        android:textStyle="bold"
+        />
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuan_info_line"/>
+    
+    <WebView 
+        android:id="@+id/tv_more_detail_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuan_info_line"/>
+    <TextView 
+        android:id="@+id/tv_more_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="查看图文详情"
+        android:textColor="@color/normal_orange"
+        android:textSize="16.0sp"/>
+
+</LinearLayout>

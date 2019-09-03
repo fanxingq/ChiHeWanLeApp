@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/normal_bg_color" >
+    <RelativeLayout 
+        android:id="@+id/city_list_tou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        
+        >
+    	<ImageView 
+        android:id="@+id/home_city_back"
+        android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_gravity="center_vertical"
+	    android:contentDescription="@null"
+	    android:padding="@dimen/normal_space"
+	    android:src="@drawable/arrow_back" 
+        />
+		<TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" 
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="15dp"
+            android:text="城市名、拼音首字母..."
+            android:drawablePadding="4dp"
+            android:textSize="@dimen/text_size_zhuti"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="18dp"
+            android:background="@drawable/city_list_search_shape"
+            android:drawableLeft="@drawable/icon_search"/>
+		
+</RelativeLayout>
+   
+    
+    
+<LinearLayout 
+    android:layout_below="@id/city_list_tou"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+ >
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+<ListView
+    android:id="@+id/city_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</ListView>
+    
+    </LinearLayout>
+    <com.qust.chihewanleapp.myview.SideBar
+        android:id="@+id/sidebar"
+        android:layout_width="@dimen/normal_input_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/city_list_tou"/> 
+</RelativeLayout>

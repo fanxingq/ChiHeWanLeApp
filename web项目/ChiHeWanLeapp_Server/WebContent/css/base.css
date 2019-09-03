@@ -1,0 +1,830 @@
+@charset "utf-8";
+
+/* 
+	@名称: base
+	@功能: 重设浏览器默认样式
+*/
+
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+
+html {
+	color: #000;
+	background: #fff;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+
+/* HTML5 媒体文件跟 img 保持一致 */
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+
+body,
+button,
+input,
+select,
+textarea {
+	font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+}
+
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* IE bug fixed: th 不继承 text-align*/
+
+th {
+	text-align: inherit;
+}
+
+
+/* 去除默认边框 */
+
+fieldset,
+img {
+	border: 0;
+}
+
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+
+iframe {
+	display: block;
+}
+
+
+/* 去掉 firefox 下此元素的边框 */
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+
+/* 一致的 del 样式 */
+
+del {
+	text-decoration: line-through;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+	font-style: normal;
+	font-weight: 500;
+}
+
+
+/* 去掉列表前的标识, li 会继承 */
+
+ol,
+ul {
+	list-style: none;
+}
+
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+
+caption,
+th {
+	text-align: left;
+}
+
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 500;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+
+/* 统一上标和下标 */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+
+/* 让链接在 hover 状态下显示下划线 */
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/* 默认不显示下划线，保持页面简洁 */
+
+ins,
+a {
+	text-decoration: none;
+}
+
+
+/* 清理浮动 */
+
+.fn-clear {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	zoom: 1;
+	/* for IE6 IE7 */
+}
+
+
+/* 隐藏, 通常用来与 JS 配合 */
+
+body .hide {
+	display: none;
+}
+
+
+/* 设置内联, 减少浮动带来的bug */
+
+.fl {
+	float: left;
+	display: inline;
+}
+
+.fr {
+	float: right;
+	display: inline;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color: #ff8040;
+	font: 12px/1.5 Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif;
+	color: #666;
+}
+
+.w {
+	width: 1190px;
+	margin: auto;
+}
+
+.style-red {
+	color: #ff8000!important;
+}
+
+
+/*shortcut*/
+
+#shortcut {
+	border-bottom: 1px solid #ddd;
+	background-color: #e3e4e5;
+}
+
+#shortcut .w {
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+}
+
+#shortcut .cw-icon {
+	height: 28px;
+	line-height: 28px;
+}
+
+#shortcut .dt {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.cw-icon {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	float: left;
+	border: 1px solid #e3e4e5;
+}
+
+#shortcut li {
+	float: left;
+}
+
+#ttbar-mycity {
+	margin-left: 200px;
+	/*为logo留出空间*/
+}
+
+.dropdown {
+	position: relative;
+	z-index: 21;
+}
+
+li {
+	list-style: none;
+}
+
+#shortcut .fl .icon {
+	width: 1.3em;
+	height: 1.3em;
+	vertical-align: -0.3em;
+	fill: currentColor;
+	overflow: hidden;
+	font-size: 14px;
+	color: #f00;
+}
+
+#ttbar-mycity .dd {
+	left: 0;
+	width: 300px;
+	padding: 10px;
+}
+
+#shortcut .dropdown-layer {
+	top: 30px;
+}
+
+#shortcut .dd {
+	line-height: 24px;
+}
+
+.dropdown-layer {
+	display: none;
+	position: absolute;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	-moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+	box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.hover {
+	z-index: 22;
+}
+
+.dropdown:hover .dropdown-layer,
+.hover .dropdown-layer {
+	display: block;
+}
+
+.dropdown:hover .cw-icon,
+.hover .cw-icon {
+	padding-bottom: 2px;
+	border-color: #ccc;
+	border-bottom: none;
+	background-color: #fff;
+}
+
+#ttbar-mycity .item {
+	float: left;
+	width: 60px;
+	padding: 2px 0;
+}
+
+#ttbar-login {
+	margin-right: 8px;
+	z-index: 20;
+}
+
+#ttbar-mycity .item a.selected {
+	background-color: #000080;
+	color: #fff;
+}
+
+#ttbar-mycity .item a {
+	float: left;
+	padding: 0 8px;
+}
+
+#ttbar-login .link-login {
+	font-family: verdana\, simsun;
+}
+
+#shortcut .style-red {
+	color: #0000a0;
+}
+
+#shortcut a {
+	color: #999;
+}
+
+#shortcut a:hover {
+	color: #0000a0;
+}
+
+
+/*.fr .cw-icon {
+    padding-right: 20px!important;
+}*/
+
+#shortcut .fr .icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+
+.mobile {
+	position: relative;
+	z-index: 21;
+}
+
+.mobile_txt {
+	width: 60px;
+	text-align: center;
+}
+
+#shortcut li.spacer {
+	overflow: hidden;
+	margin: 11px 5px 0;
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+}
+
+.mobile_static:before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: -9px;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #e4e4e4 #e4e4e4 #f6f6f6
+}
+
+.mobile_static {
+	position: absolute;
+	left: 3px;
+	width: 66px;
+	height: 66px;
+	border: 1px solid #cfcfcf;
+}
+
+.mobile_static_qrcode {
+	margin: 4px auto;
+	width: 60px;
+	height: 60px;
+}
+
+#ttbar-myjd .dropdown-layer {
+	left: 0;
+	width: 280px;
+}
+
+#ttbar-myjd .myjdlist {
+	padding: 10px 0 10px 15px;
+	overflow: hidden;
+}
+
+#ttbar-myjd .myjdlist .fore1,
+#ttbar-myjd .myjdlist .fore2 {
+	float: left;
+	width: 126px;
+}
+
+
+/*header*/
+
+#header .w {
+	position: relative;
+	z-index: 11;
+	height: 140px;
+}
+
+#logo {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: -31px;
+	width: 190px;
+	height: 170px;
+	-moz-box-shadow: 0 -12px 10px rgba(0, 0, 0, .2);
+	box-shadow: 0 -12px 10px rgba(0, 0, 0, .2);
+	background-color: #fff;
+}
+
+.logo_tit {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.logo_tit_lk {
+	overflow: hidden;
+	display: block;
+	width: 190px;
+	height: 170px;
+	
+	background-repeat: no-repeat;
+	text-indent: -999px;
+}
+
+.search-m {
+	position: relative;
+	z-index: 1;
+	height: 60px;
+}
+
+.search-m .form {
+	position: absolute;
+	left: 320px;
+	top: 25px;
+	width: 550px;
+	height: 35px;
+}
+
+.search-m .text {
+	left: 0;
+	padding: 4px;
+	width: 490px;
+	height: 25px;
+	border: 1px solid #ff8000;
+	line-height: 25px;
+	font-size: 14px;
+	color: #989898;
+}
+
+.search-m .icon {
+	position: absolute;
+	right: 65px;
+	top: 7px;
+	overflow: hidden;
+	width: 1.8em;
+	height: 1.8em;
+	margin-left: -3.6em;
+	fill: currentColor;
+	overflow: hidden;
+}
+
+.search-m .button {
+	right: 0;
+	width: 50px;
+	height: 35px;
+	line-height: 35px;
+	border: none;
+	background-color: #ff8000;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.search-m .button,
+.search-m .text {
+	position: absolute;
+	top: 0;
+	outline: none;
+}
+
+.search-m .button .icon {
+	position: absolute;
+	right: 16px;
+	top: 7px;
+   width: 1em; 
+   height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   color: #Fff;
+}
+
+#settleup {
+	position: absolute;
+	right: 99px;
+	top: 25px;
+}
+
+#settleup .cw-icon {
+    width: 188px;
+    height: 33px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 33px;
+}
+
+#settleup .icon {
+   width: 1.6em; height: 1.6em;
+   vertical-align: -0.3em;
+   fill: currentColor;
+   overflow: hidden;
+   color: #ff8000;
+   margin-right: 3px;
+}
+
+#settleup .cw-icon a {
+    color: #ff8000;
+}
+
+#settleup .ci-count {
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    right: auto;
+    display: inline-block;
+    padding: 1px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #ff8000;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    min-width: 12px;
+    text-align: center;
+}
+
+em, i {
+    font-style: normal;
+}
+
+#hotwords {
+    overflow: hidden;
+    position: absolute;
+    left: 320px;
+    top: 65px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#hotwords a {
+    float: left;
+    margin-right: 10px;
+    color: #999;
+}
+
+#navitems {
+    overflow: hidden;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 790px;
+    height: 40px;
+}
+
+#navitems .spacer, #navitems li, #navitems ul {
+    float: left;
+}
+
+#navitems li {
+    margin-left: 30px;
+}
+
+#navitems a {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+}
+
+#navitems .spacer {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -10px;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+/*footer*/
+#footer{
+	margin-top: 50px;
+}
+
+.enjoystate .mod_footer {
+    padding-bottom: 100px;
+}
+
+.mod_footer {
+    height: 500px;
+    background-color: #eaeaea;
+}
+
+.mod_service {
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.grid_c1 {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.mod_service_list {
+    overflow: hidden;
+    height: 42px;
+}
+
+.mod_service_item {
+    float: left;
+    width: 297px;
+}
+
+.mod_service_unit {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 45px;
+    width: 180px;
+}
+
+.mod_service_duo {
+    background-position: 0 0;
+}
+
+.mod_service_kuai {
+    background-position: 0 -43px;
+}
+
+.mod_service_hao {
+    background-position: 0 -86px;
+}
+.mod_service_sheng {
+    background-position: 0 -129px;
+}
+.mod_service_tit {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+    background-image: url(../img/ico_service.png);
+    text-indent: -999px;
+}
+
+.mod_service_txt {
+    overflow: hidden;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+}
+
+.mod_help {
+    padding: 20px 0;
+}
+
+.mod_help_list {
+    overflow: hidden;
+    height: 160px;
+}
+
+.mod_help_nav {
+    float: left;
+    width: 198px;
+    line-height: 22px;
+}
+
+.mod_help_nav_tit {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff8000;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+.mod_help_cover {
+    float: right;
+    width: 200px;
+    height: 150px;
+    background: url(../img/ico_footer.png) no-repeat 0 0;
+}
+
+.mod_help_cover_con {
+    padding: 0 10px;
+}
+
+.mod_help_cover_tit {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mod_help_cover_more {
+    text-align: right;
+}

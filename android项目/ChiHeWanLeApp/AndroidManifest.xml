@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qust.chihewanleapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+<!-- 获取城市定位权限 -->
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<!-- 网络访问的权限 -->
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <!-- theme主题标签无 -->
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.qust.chihewanleapp.WelcomeStartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qust.chihewanleapp.MainActivity" />
+        <activity android:name="com.qust.chihewanleapp.WelcomeGuideActivity" />
+         <activity android:name="com.qust.chihewanleapp.AllCategoryActivity" />
+         <activity  android:name="com.qust.chihewanleapp.my.PersonSetActivity"/>
+         <activity android:name="com.qust.chihewanleapp.my.LoginActivity"/>
+         <activity android:name="com.qust.chihewanleapp.my.LoginByMessage"/>
+           <activity android:name="com.qust.chihewanleapp.my.MyFavoriteActivity"/>
+         <activity android:name="com.qust.chihewanleapp.my.MyCommentActivity"/>
+         <activity android:name="com.qust.chihewanleapp.my.MyWalletActivity"/>
+         <activity android:name="com.qust.chihewanleapp.tuan.GoodsDetailActivity"/>
+         <activity android:name="com.qust.chihewanleapp.home.GoodsCategoryList"/>
+         <activity android:name="com.qust.chihewanleapp.my.RegisterActivity"/>
+         <activity android:name="com.qust.chihewanleapp.tuan.OrderNow"/>
+          <activity android:name="com.qust.chihewanleapp.home.CityGps"/>
+    </application>
+
+    
+    
+    
+    
+    
+</manifest>

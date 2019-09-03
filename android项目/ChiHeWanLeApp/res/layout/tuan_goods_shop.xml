@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/normal_space"
+    android:orientation="vertical" >
+   
+    <TextView 
+        android:id="@+id/shop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商家名称"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+    <ImageView 
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuan_info_line"/>
+     <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+    <LinearLayout 
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/little_sapce"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/shop_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/little_sapce"
+                android:text="010-88888888"
+                android:textColor="@color/gray"/>
+            <ImageView 
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuan_info_line"/>
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView 
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/little_sapce"
+                android:text="青岛市崂山区"
+                android:textColor="@color/gray"/>
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大于12km"
+            android:textColor="@color/gray"/>
+            </LinearLayout>
+        </LinearLayout>
+       
+        
+        </LinearLayout>
+        <ImageView 
+            android:id="@+id/shop_tel_index"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_phone_big"/>
+        </LinearLayout>
+   <ImageView 
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuan_info_line"/>
+
+</LinearLayout>
